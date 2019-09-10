@@ -5,7 +5,7 @@ Examples below use mry and kvn as example user names for Mary and Kevin
 
 |file            |example            |description                                                                  |
 |----------------|-------------------|-----------------------------------------------------------------------------|
-|u.bat           |u mry              |lists AD properties for AD user mary, including accoutn dates, groups etc. _same as: net user mary /domain_|
+|u.bat           |u mry              |lists AD properties for AD user mary, including account dates, groups etc. _same as: net user mry /domain_|
 |names.bat       |names mry kvn joe  |lists the full names of the user names                                       |
 |namesLines.bat  |nameslines mry kvn |lists user names and their full names. Full name starts with a semicolon in order to process the text|
 |namesExp.bat    |namesexp mry kvn   |same as namesLines, but with account and password expiry dates and enabled status.|
