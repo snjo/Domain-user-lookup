@@ -1,0 +1,1 @@
+@echo Bruk names.bat
