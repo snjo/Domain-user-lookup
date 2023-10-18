@@ -1,4 +1,6 @@
 @echo off
+rem    Lists the full names of the user names
+rem    Example: names mry kvn joe
 rem chcp 850
 setlocal enableDelayedExpansion
 copy NUL result.txt > NUL

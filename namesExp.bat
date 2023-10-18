@@ -1,4 +1,7 @@
 @echo off
+rem    Lists user names and their full names, password expiry dates and account enabled status.
+rem    Full name starts with a semicolon in order to process the text.
+rem    Example: namesexp mry kvn
 rem chcp 850
 setlocal enableDelayedExpansion
 copy NUL result.txt > NUL

@@ -26,9 +26,9 @@ c:\users\joe\>u mry
 	Account active               Yes
 	Account expires              Never
 
-	Password last set            ‎2019-‎09-‎12 09:49:24
+	Password last set            2019-09-12 09:49:24
 	Password expires             Never
-	Password changeable          ‎2019-‎09-‎13 09:49:24
+	Password changeable          2019-09-13 09:49:24
 	Password required            Yes
 	User may change password     Yes
 
@@ -36,7 +36,7 @@ c:\users\joe\>u mry
 	Logon script                 Login\standard.cmd
 	User profile
 	Home directory
-	Last logon                   ‎2019-‎09-‎12 07:58:23
+	Last logon                   2019-09-12 07:58:23
 
 	Logon hours allowed          All
 
@@ -66,9 +66,9 @@ c:\users\joe\>namesExp mry kvn
 	;Mary Smith
 	Account active               Yes
 	Account expires              Never
-	Password expires             ?2019-?11-?05 14:15:14
+	Password expires             2019-11-05 14:15:14
 	kvn 
 	;Kevin Jammies
 	Account active               Yes
 	Account expires              Never
-	Password expires             ?2019-?09-?20 13:10:10
+	Password expires             2019-09-20 13:10:10
