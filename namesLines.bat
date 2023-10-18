@@ -26,9 +26,10 @@ echo use n.bat to open the file
 GOTO end
 :helpstart
 echo.
-echo namesLines [Username] [Username] [Username] etc.
-echo.
 echo Lists user names and their full names. Full name starts with a semicolon in order to process the text
+echo.
+echo   NAMESLINES [Username] [Username] [Username] etc.
+echo.
 echo Example: nameslines mry kvn
 echo.
 echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information

@@ -30,10 +30,11 @@ echo use n.bat to open the file
 GOTO end
 :helpstart
 echo.
-echo namesExp [Username] [Username] [Username] etc.
-echo.
 echo Lists user names and their full names, password expiry dates and account enabled status.
 echo Full name starts with a semicolon in order to process the text.
+echo.
+echo   NAMESEXP [Username] [Username] [Username] etc.
+echo.
 echo Example: namesexp mry kvn
 echo.
 echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information

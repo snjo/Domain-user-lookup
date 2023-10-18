@@ -23,9 +23,10 @@ type result.txt
 GOTO end
 :helpstart
 echo.
-echo names [Username] [Username] [Username] etc.
-echo.
 echo Lists the full names of the user names
+echo.
+echo   NAMES [Username] [Username] [Username] etc.
+echo.
 echo Example: names mry kvn joe
 echo.
 echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information
