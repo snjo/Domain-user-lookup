@@ -1,10 +1,11 @@
 @echo off
-rem    Lists the full names of the user names
-rem    Example: names mry kvn joe
 rem chcp 850
 setlocal enableDelayedExpansion
+IF "%1"=="" GOTO helpstart
+IF "%1"=="/?" GOTO helpstart
+IF "%1"=="help" GOTO helpstart
 copy NUL result.txt > NUL
-:loop
+:loopend
 IF "%1"=="" GOTO end
 	copy NUL %temp%\names2.tmp > NUL	
 	net user %1 /domain > %temp%\names.tmp
@@ -15,7 +16,19 @@ IF "%1"=="" GOTO end
 		echo %1 !trimmed! >> result.txt
 	)
 	SHIFT
-	GOTO loop
+	GOTO loopend
 :end
 echo result.txt
 type result.txt
+GOTO end
+:helpstart
+echo.
+echo names [Username] [Username] [Username] etc.
+echo.
+echo Lists the full names of the user names
+echo Example: names mry kvn joe
+echo.
+echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information
+GOTO end
+:helpend
+:end

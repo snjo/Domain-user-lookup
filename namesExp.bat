@@ -1,12 +1,12 @@
 @echo off
-rem    Lists user names and their full names, password expiry dates and account enabled status.
-rem    Full name starts with a semicolon in order to process the text.
-rem    Example: namesexp mry kvn
 rem chcp 850
 setlocal enableDelayedExpansion
+IF "%1"=="" GOTO helpstart
+IF "%1"=="/?" GOTO helpstart
+IF "%1"=="help" GOTO helpstart
 copy NUL result.txt > NUL
 :loop
-IF "%1"=="" GOTO end
+IF "%1"=="" GOTO loopend
 	copy NUL %temp%\names2.tmp > NUL
 	copy NUL %temp%\names3.tmp > NUL	
 	echo %1 >> result.txt
@@ -21,9 +21,22 @@ IF "%1"=="" GOTO end
 	)
 	SHIFT
 	GOTO loop
-:end
+:loopend
 echo ----------
 echo result.txt
 type result.txt
 echo.
 echo use n.bat to open the file
+GOTO end
+:helpstart
+echo.
+echo namesExp [Username] [Username] [Username] etc.
+echo.
+echo Lists user names and their full names, password expiry dates and account enabled status.
+echo Full name starts with a semicolon in order to process the text.
+echo Example: namesexp mry kvn
+echo.
+echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information
+GOTO end
+:helpend
+:end

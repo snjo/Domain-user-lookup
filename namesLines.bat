@@ -1,8 +1,9 @@
 @echo off
-rem    Lists user names and their full names. Full name starts with a semicolon in order to process the text
-rem    Example: nameslines mry kvn
 rem chcp 850
 setlocal enableDelayedExpansion
+IF "%1"=="" GOTO helpstart
+IF "%1"=="/?" GOTO helpstart
+IF "%1"=="help" GOTO helpstart
 copy NUL result.txt > NUL
 :loop
 IF "%1"=="" GOTO end
@@ -22,3 +23,15 @@ echo result.txt
 type result.txt
 echo.
 echo use n.bat to open the file
+GOTO end
+:helpstart
+echo.
+echo namesLines [Username] [Username] [Username] etc.
+echo.
+echo Lists user names and their full names. Full name starts with a semicolon in order to process the text
+echo Example: nameslines mry kvn
+echo.
+echo Check readme.md or https://github.com/snjo/Domain-user-lookup for more information
+GOTO end
+:helpend
+:end

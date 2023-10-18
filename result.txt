@@ -1,10 +1,4 @@
 aao 
 ;Andreas Aakvik Gogstad			 
-Account active               Yes
-Account expires              Never
-Password expires             2024-02-11 08:18:12
 thh 
 ;Thor Helge Haraldsen			 
-Account active               Yes
-Account expires              Never
-Password expires             2024-01-07 08:13:38
